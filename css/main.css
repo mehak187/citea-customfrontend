@@ -64,8 +64,8 @@ body {
     border: 1px solid #CDCDCD;
 }
 
-.fw-md {
-    font-weight: 500;
+.fw-light {
+    font-weight: 300;
 }
 
 .fw-semi {
@@ -74,6 +74,10 @@ body {
 
 .fw-bold {
     font-weight: 700;
+}
+
+.fw-extra-bold {
+    font-weight: 800;
 }
 
 .font-12 {
