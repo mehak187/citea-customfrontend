@@ -18,6 +18,24 @@
 .hero-text{
     line-height: 1.5;
 }
+.hero-main-pic{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-main-pic::before{
+    content: url(/imgs/heroleft.svg);
+    position: absolute;
+    left:100px;
+    top: 50px;
+}
+.hero-main-pic::after{
+    content: url(/imgs/heroright.svg);
+    position: absolute;
+    right:90px;
+    top: 200px;
+}
 .hero-btn{
     background-color: var(--green);
     padding: 12px 50px;
@@ -177,4 +195,9 @@ max-width: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.borderyellow{
+    height: 40px;
+    background-color: #F4B942;
+    border-radius: 0px 70px 0px 40px;
 }
