@@ -1,1 +1,213 @@
 /* ---------hamza---------- */
+:root{
+    --grey:#F7F7F7;
+    --yellow:#F4B942;
+    --orange:#FE5D26;
+    --white:#fff;
+    --ex-blue:#C6D4FF;
+    --d-green:#35D9BB;
+    --ex-sky:#F5F6FB;
+}
+.bg-white{
+    background-color: var(--white);
+}
+.bg-exsky{
+    background-color: var(--ex-sky);
+}
+.bg-dgreen{
+    background-color: var(--d-green);
+}
+.bg-exblue{
+    background-color: var(--ex-blue);
+}
+.bg-grey{
+    background-color: var(--grey);
+}
+.bg-yellow{
+    background-color: var(--yellow);
+}
+.bg-orange{
+    background-color: var(--orange);
+}
+.litblue{
+    color: var(--blue);
+}
+.feature-div{
+    max-width: 600px;
+}
+.fhero-sec{
+    min-height: 500px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.feature-para{
+    line-height: 30px;
+}
+.logoPics-sec{
+    margin-top:-135px;
+}
+.logoImg-main{
+    text-align: center;
+    border-radius: 150px;
+    padding: 40px 40px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+ }
+.logoimg-main{
+    padding: 10px 30px;
+}
+.logo-imgs{
+    width: 80px;
+    height: 25px;
+}
+.vacation-para{
+    line-height: 30px;
+}
+.explore-btn{
+    padding: 10px 30px;
+    background-color: var(--blue);
+    border-radius: 8px;
+    color: white;
+}
+.vacation-cardPic{
+    height: 90px;
+    width: 60px;
+}
+.coreF-card1{
+    width: max-content;
+}
+.unlock-sec{
+    background: linear-gradient(180deg, #FFFFFF 0%, #B4DFE5 100%);
+}
+.trans-shadow{
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)),
+linear-gradient(110.72deg, rgba(255, 255, 255, 0.3) -2.91%, rgba(255, 255, 255, 0) -2.9%, rgba(255, 255, 255, 0) 17.95%, rgba(255, 255, 255, 0.3) 19.42%, rgba(255, 255, 255, 0.3) 34.01%, rgba(255, 255, 255, 0) 36.21%, rgba(255, 255, 255, 0) 50.86%, rgba(255, 255, 255, 0.3) 53.07%, rgba(255, 255, 255, 0.3) 66.11%, rgba(255, 255, 255, 0) 68.32%);
+}
+.leran-btn{
+    padding: 10px 30px;
+    background-color: var(--d-green);
+    color: black;
+}
+.my-shadow{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.onboarding-card:hover{
+    box-shadow: 0px 0px 34px 0px rgba(216, 216, 216, 0.4) inset;
+}
+.accrdin-main {
+    position: relative;
+    background-image: url('/imgs/accrdion-img.svg');
+    background-position: calc(100% - 25px) bottom;
+    background-repeat: no-repeat;
+    background-size: 300px;
+    min-height: 300px;
+}
+.custom-accordion .accordion-button {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border: none;
+    padding: 20px 24px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
+}
+.custom-accordion .accordion-button:not(.collapsed) {
+    background-color: white !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px !important;
+    padding: 20px 24px;
+}
+.custom-accordion .accordion-button.collapsed {
+    border-radius: 8px !important;
+    padding: 20px 24px;
+}
+.custom-accordion .accordion-button::after {
+    display: none;
+}
+.custom-accordion .accordion-header .fas.fa-plus {
+    color: #000;
+}
+.custom-accordion .accordion-item {
+    border: none;
+}
+.gotBack-sec{
+    background: linear-gradient(90deg, rgba(180, 223, 229, 0) 0%, rgba(173, 220, 226, 0.2) 50%, rgba(180, 223, 229, 0) 100%);
+}
+.gotBack-para{
+    line-height: 30px;
+}
+.gotBack-shadow{
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+    .accrdin-main {
+        background-size: 250px;
+        background-position: calc(100% - 20px) bottom;
+        padding: 10px;
+        min-height: 250px;
+    }
+    .custom-accordion .accordion-button {
+        padding: 15px 18px;
+        font-size: 16px;
+    }
+    .custom-accordion .accordion-body {
+        font-size: 14px;
+    }
+}
+@media (min-width: 1025px) {
+    .accrdin-main {
+        background-size: 300px;
+    }
+}
+@media (max-width: 992px) {
+    .accrdin-main {
+        background-image: none;
+        padding: 0;
+        min-height: auto;
+    }
+    .custom-accordion .accordion-button {
+        padding: 12px 15px;
+        font-size: 14px;
+    }
+    .custom-accordion .accordion-body {
+        font-size: 12px;
+    }
+    .custom-accordion .accordion-item {
+        margin-bottom: 10px;
+    }
+    .accordion-header {
+        display: flex;
+        justify-content: space-between;
+    }
+    .accordion-header .fas.fa-plus {
+        font-size: 18px;
+    }
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+    .logoImg-main{
+        border-radius: 120px;
+     }
+}
+@media screen and (max-width:390px) {
+    .logoPics-sec{
+        margin-top:-100px;
+    }
+}
+
+
+
+
+
+
