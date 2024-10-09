@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Slider</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+h1 {
+    color: #2d2d2d;
+}
+
+.slider-container {
+    margin: 20px 0;
+}
+
+.slider {
+    width: 100%;
+}
+
+.range-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.range-labels span {
+    color: #2d2d2d;
+}
+
+#propertyCount {
+    width: 50px;
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+#price {
+    color: #007bff;
+    font-weight: bold;
+}
+
+button.sign-up {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button.sign-up:hover {
+    background-color: #0056b3;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Everything You Want, All Included!</h1>
+        <p>Only pay for what you need. Our pricing scales as you grow.</p>
+        
+        <div class="slider-container">
+            <input type="range" min="0" max="100" value="25" id="propertyRange" oninput="updatePricing()" class="slider">
+            <div class="range-labels">
+                <span>0</span>
+                <span>25</span>
+                <span>50</span>
+                <span>75</span>
+                <span>100</span>
+            </div>
+        </div>
+        
+        <p>For <input type="text" id="propertyCount" value="25" readonly> properties, your pricing is <span id="price">$300</span> per month.</p>
+        
+        <button class="sign-up">Sign Up Now!</button>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        function updatePricing() {
+    const rangeValue = document.getElementById('propertyRange').value;
+    const propertyCount = document.getElementById('propertyCount');
+    const price = document.getElementById('price');
+
+    // Update property count
+    propertyCount.value = rangeValue;
+
+    // Calculate the price based on the range value
+    const calculatedPrice = rangeValue * 12; // Assuming $12 per property
+    price.innerText = `$${calculatedPrice}`;
+}
+
+    </script>
+</body>
+</html>
