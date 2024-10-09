@@ -6,10 +6,38 @@
     --white:#fff;
     --ex-blue:#C6D4FF;
     --d-green:#35D9BB;
+    --exx-green:#B8F8ED;
     --ex-sky:#F5F6FB;
+    --ex-green:#D6FCF5;
+    --lit-grey:#F8F8F8;
+    --exx-blue:#B9C9E6;
+    --exx-yellow:#F2E8C3;
+    --exx-oragne:#F3CCBA;
+    --exxx-sky:#EBFDFA;
+}
+.bg-exxBlue{
+    background-color: var(--exx-blue);
+}
+.bg-exxxSky{
+    background-color: var(--exxx-sky);
+}
+.bg-exxOrange{
+    background-color: var(--exx-oragne);
+}
+.bg-exxYellow{
+    background-color: var(--exx-yellow);
+}
+.bg-exxGreen{
+    background-color: var(--exx-green);
 }
 .bg-white{
     background-color: var(--white);
+}
+.bg-exgreen{
+    background-color: var(--ex-green);
+}
+.bg-litgrey{
+    background-color: var(--lit-grey);
 }
 .bg-exsky{
     background-color: var(--ex-sky);
@@ -35,12 +63,13 @@
 .feature-div{
     max-width: 600px;
 }
-.fhero-sec{
-    min-height: 500px;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
+.fhero-sec,.commhero-sec {
+    padding-bottom: 100px !important;
+    min-height: 500px !important;
+    border-bottom-left-radius: 30px !important;
+    border-bottom-right-radius: 30px !important;
 }
-.feature-para{
+.feature-para, .comm-para, .effort-para, .guest-para{
     line-height: 30px;
 }
 .logoPics-sec{
@@ -139,16 +168,112 @@ linear-gradient(110.72deg, rgba(255, 255, 255, 0.3) -2.91%, rgba(255, 255, 255, 
 .gotBack-shadow{
     box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
 }
+.dot-icon{
+    font-size: 10px;
+}
+.tic-img{
+    height: 25px;
+    width: 25px;
+}
+.communication-sec{
+    background: linear-gradient(to bottom, #ECFDFA 0%, #FFFFFF 100%);
+}
+.commCard-btn{
+    padding: 14px 30px;
+    border-radius: 10px;
+    color: white;
+}
+.price-btn1 {
+    background-color: var(--blue);
+    color: white;
+    border: 0;
+    padding: 12px 45px;
+    border-radius: 30px;
+}
+.price-btn2 {
+    background-color: var(--white);
+    color: black;
+    border: 1px solid var(--blue);
+    padding: 7px 23px;
+    border-radius: 30px;
+}
+.priceBtn-main {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color:#E4E6F0;
+    padding: 10px 15px;
+    border-radius: 30px;
+}
+
+
+.rang-contanr{
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border: 4px solid #3551B633;
+    border-radius: 10px;
+    box-shadow: 0px 0px 24px 0px #DADADAB2;
+    max-width: 700px;
+}
+.slider-container {
+    margin: 20px 0;
+}
+
+.slider {
+    width: 100%;
+}
+
+.range-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.range-labels span {
+    color: #2d2d2d;
+}
+
+#propertyCount {
+    width: 50px;
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+#price {
+    color: #007bff;
+    font-weight: bold;
+}
+
+button.sign-up {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button.sign-up:hover {
+    background-color: #0056b3;
+}
 
 
 
 
 
-
-
-
-
-
+@media screen and (max-width:433px) {
+    .priceBtn-main{
+        flex-wrap: wrap;
+    }
+    .price-btn2{
+        margin-top: 10px;
+        margin-left: 0 !important;
+    }
+}
 @media (max-width: 1024px) {
     .accrdin-main {
         background-size: 250px;
@@ -197,8 +322,13 @@ linear-gradient(110.72deg, rgba(255, 255, 255, 0.3) -2.91%, rgba(255, 255, 255, 
         padding: 0 15px;
     }
     .logoImg-main{
-        border-radius: 120px;
+        border-radius: 90px;
      }
+}
+@media screen and (max-width:768px) {
+    .logoImg-main {
+        border-radius: 50px;
+    }
 }
 @media screen and (max-width:390px) {
     .logoPics-sec{
