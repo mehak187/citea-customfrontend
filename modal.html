@@ -43,15 +43,15 @@
             <div></div>
             <h1 class="modal-title fs-4 fw-bold" id="exampleModalLabel">Welcome back!</h1>
             <div>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
+                <button type="button" class="btn-close modal-close focus-none" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>            
         </div>        
         <div class="modal-body">
             <form>
                 <div class="login-size mx-auto">
                     <img src="/imgs/loginpic.svg" alt="Login-pic" class="rounded-circle">
                 </div>
-                <p class="mb-0 fw-bold fs-4 text-center">Login</p>
+                <p class="mb-0 fw-bold fs-4 text-center mt-3">Login</p>
                 
                 <div class="mt-3">
                     <label for="email" class="form-label fw-bold">Email address</label>
@@ -63,7 +63,7 @@
                     <input type="password" class="form-control focus-none p-2 siminput-bg" id="password" placeholder="Type Here">
                 </div>
                 
-                <div class="d-flex justify-content-between mt-3">
+                <div class="d-sm-flex justify-content-between mt-3">
                         <div class="mb-3 d-flex align-items-center">
                             <input type="checkbox" id="rememberPassword" class="custom-checkboxlogin">
                             <label for="rememberPassword" class="ms-2 fw-semi">Remember Password</label>
@@ -73,7 +73,7 @@
                     </div>
                 </div>
                 
-                <div class="mb-3">
+                <div class="my-3">
                     <button type="submit" class="login-btn w-100 fw-bold">Log In</button>
                 </div>
             </form>
@@ -86,50 +86,53 @@
   <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content">
-        <div class="modal-header d-flex justify-content-between align-items-center">
+        <div class="modal-header d-sm-flex justify-content-between align-items-center">
+            <div></div>
             <h1 class="modal-title fs-4 fw-bold" id="exampleModalLabel">Welcome To SimpliHost  👋</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div>
+                <button type="button" class="btn-close modal-close focus-none" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>            
         </div>        
         <div class="modal-body">
             <form>
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-md-6">
                         <div class="mt-3">
                             <label for="fname" class="form-label fw-bold">First Name</label>
                             <input type="text" class="form-control focus-none p-2 siminput-bg" id="fname" placeholder="Type Here">
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-md-6">
                         <div class="mt-3">
                             <label for="lname" class="form-label fw-bold">Last Name</label>
                             <input type="text" class="form-control focus-none p-2 siminput-bg" id="lname" placeholder="Type Here">
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-md-6">
                         <div class="mt-3">
                             <label for="pnumber" class="form-label fw-bold">Phone Number</label>
                             <input type="tel" class="form-control focus-none p-2 siminput-bg" id="pnumber" placeholder="Type Here">
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-md-6">
                         <div class="mt-3">
                             <label for="semail" class="form-label fw-bold">Email</label>
                             <input type="email" class="form-control focus-none p-2 siminput-bg" id="semail" placeholder="Type Here">
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-md-6">
                         <div class="mt-3">
                             <label for="spassword" class="form-label fw-bold">Password</label>
                             <input type="password" class="form-control focus-none p-2 siminput-bg" id="spassword" placeholder="Type Here">
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-md-6">
                         <div class="mt-3">
                             <label for="srpassword" class="form-label fw-bold">Re-Enter Password</label>
                             <input type="password" class="form-control focus-none p-2 siminput-bg" id="srpassword" placeholder="Type Here">
                         </div>
                     </div>
-                    <div class="col-8 mt-3">
+                    <div class="col-12 mt-3">
                         <div class="mb-3 d-flex align-items-center">
                             <input type="checkbox" id="agree" class="custom-checkboxlogin">
                             <label for="agree" class="ms-2 fw-semi">I agree to the Terms of Service and Privacy Policy.</label>
@@ -139,14 +142,14 @@
                         <button type="button" class="signup-btn fw-semi">Sign up</button>
                     </div>
                     <div class="d-flex justify-content-center mt-3">
-                        <button type="button" class="signingoogle-btn fw-semi d-flex align-items-center">
+                        <button type="button" class="signingoogle-btn fw-semi d-flex align-items-center justify-content-center">
                             <div class="signin-icon">
                                 <img src="/imgs/googlesignin.svg" alt="google-pic" class="me-3">
                             </div>
                             Sign In with Google</button>
                     </div>
                     <div class="d-flex justify-content-center mt-3">
-                        <button type="button" class="signingoogle-btn fw-semi d-flex align-items-center">
+                        <button type="button" class="signinfacebook-btn fw-semi d-flex align-items-center justify-content-center">
                             <div class="signin-icon">
                                 <img src="/imgs/signinfacebook.svg" alt="google-pic" class="me-3">
                             </div>
@@ -166,7 +169,7 @@
       <div class="modal-content">
         <div class="modal-header d-flex justify-content-between align-items-center">
             <h1 class="modal-title fs-4 fw-bold blue-color" id="exampleModalLabel">Select Verification</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <button type="button" class="btn-close modal-close focus-none" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>        
         <div class="modal-body">
             <form>
@@ -212,8 +215,13 @@
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header d-flex justify-content-between align-items-center">
-            <h1 class="modal-title fs-4 fw-bold blue-color" id="exampleModalLabel">Identify Verification</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div></div>
+            <div>
+                <h1 class="modal-title fs-4 fw-bold blue-color" id="exampleModalLabel">Identify Verification</h1>
+            </div>
+            <div>
+                <button type="button" class="btn-close modal-close focus-none" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
         </div>        
         <div class="modal-body">
             <form>
@@ -223,24 +231,12 @@
                 <p class="mb-0 fw-bold fs-4 text-center mt-2">Text Confirmation</p>
                 <p class="mb-0 color-black text-center mt-2">A code was sent to xxx-xxx-2121</p>
                 <div class="d-flex justify-content-center mt-5">
-                    <div class="inbox-size">
-                        <p>--</p>
-                    </div>
-                    <div class="inbox-size ms-2">
-                        <p>--</p>
-                    </div>
-                    <div class="inbox-size ms-2">
-                        <p>--</p>
-                    </div>
-                    <div class="inbox-size ms-2">
-                        <p>--</p>
-                    </div>
-                    <div class="inbox-size ms-2">
-                        <p>--</p>
-                    </div>
-                    <div class="inbox-size ms-2">
-                        <p>--</p>
-                    </div>
+                    <input type="text" class="inbox-size">
+                    <input type="text" class="inbox-size ms-2">
+                    <input type="text" class="inbox-size ms-2">
+                    <input type="text" class="inbox-size ms-2">
+                    <input type="text" class="inbox-size ms-2">
+                    <input type="text" class="inbox-size ms-2">
                 </div>
                 <div class="d-flex justify-content-center mt-5">
                     <button type="submit" class="send-btn blue-color fw-semi">Send again</button>
@@ -260,8 +256,13 @@
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header d-flex justify-content-between align-items-center">
-            <h1 class="modal-title fs-4 fw-bold blue-color" id="exampleModalLabel">Identify Verification</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div></div>
+            <div>
+                <h1 class="modal-title fs-4 fw-bold blue-color" id="exampleModalLabel">Identify Verification</h1>
+            </div>
+            <div>
+                <button type="button" class="btn-close modal-close focus-none" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
         </div>        
         <div class="modal-body">
             <form>
@@ -271,24 +272,12 @@
                 <p class="mb-0 fw-bold fs-4 text-center mt-2">Email Confirmation</p>
                 <p class="mb-0 color-black text-center mt-2">A code was sent to miona.alshlowi@gmail.com</p>
                 <div class="d-flex justify-content-center mt-5">
-                    <div class="inbox-size">
-                        <p>--</p>
-                    </div>
-                    <div class="inbox-size ms-2">
-                        <p>--</p>
-                    </div>
-                    <div class="inbox-size ms-2">
-                        <p>--</p>
-                    </div>
-                    <div class="inbox-size ms-2">
-                        <p>--</p>
-                    </div>
-                    <div class="inbox-size ms-2">
-                        <p>--</p>
-                    </div>
-                    <div class="inbox-size ms-2">
-                        <p>--</p>
-                    </div>
+                    <input type="text" class="inbox-size">
+                    <input type="text" class="inbox-size ms-2">
+                    <input type="text" class="inbox-size ms-2">
+                    <input type="text" class="inbox-size ms-2">
+                    <input type="text" class="inbox-size ms-2">
+                    <input type="text" class="inbox-size ms-2">
                 </div>
                 <div class="d-flex justify-content-center mt-5">
                     <button type="submit" class="send-btn blue-color fw-semi">Send again</button>
@@ -299,8 +288,6 @@
                 <p class="mb-0 mt-3 text-center fw-semi">Having problems?<span class="ms-2"><a href="#" class="text-decoration-none">Let us help and contact us!</a></span></p>
             </form>
         </div>
-        
-        
       </div>
     </div>
   </div>
@@ -308,8 +295,13 @@
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header d-flex justify-content-between align-items-center">
-            <h1 class="modal-title fs-4 fw-bold blue-color" id="exampleModalLabel">Create your account</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div></div>
+            <div>
+                <h1 class="modal-title fs-4 fw-bold blue-color" id="exampleModalLabel">Create your account</h1>
+            </div>
+            <div>
+                <button type="button" class="btn-close modal-close focus-none" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
         </div>        
         <div class="modal-body">
             <div class="simplihost-size mx-auto">

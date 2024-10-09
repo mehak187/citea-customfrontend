@@ -15,6 +15,9 @@
 .light-grey{
     color:#757575;
 }
+.chocalte-color{
+    color: rgba(72, 72, 72, 1);
+}
 .hero-text{
     line-height: 1.5;
 }
@@ -180,7 +183,7 @@
 }
 /* ------------listing------ */
 .listinghero-para{
-max-width: 400px;
+max-width: 500px;
 }
 .listings-card {
     box-shadow: 0px 7px 20px 0px #0000001A;
@@ -189,7 +192,7 @@ max-width: 400px;
 .listing-card-size{
     width: 70px;
     height: 70px;
-    border-radius: 20px;
+    border-radius: 10px;
     background-color: #F4B942;
     display: flex;
     justify-content: center;
@@ -221,8 +224,8 @@ max-width: 400px;
     box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.1);
 }
 .furnishedover-size {
-    height: 60px;
-    width: 60px;
+    height: 45px;
+    width: 45px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -397,9 +400,9 @@ color: rgba(205, 205, 205, 1);;
 .login-size {
     width: 100px;
     height: 100px;
-    border: 1px solid transparent;
-    border-image: linear-gradient(180deg, #3551B6 -42.5%, #3551B6 77%) 1;
-    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .custom-checkboxlogin {
     width: 20px;
@@ -410,11 +413,13 @@ color: rgba(205, 205, 205, 1);;
     cursor: pointer;
     position: relative;
     border-radius: 4px; 
+    flex-shrink: 0;
   }
   
   .custom-checkboxlogin:checked {
     background-color: #000; 
     border-color: #000;
+    flex-shrink: 0;
   }
   
   .custom-checkboxlogin:checked::after {
@@ -425,10 +430,12 @@ color: rgba(205, 205, 205, 1);;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 12px;
+    flex-shrink: 0;
   }
   
   .custom-checkboxlogin:focus {
     outline: none;
+    flex-shrink: 0;
   }
   .login-btn{
     background-color: var(--green);
@@ -452,6 +459,12 @@ color: rgba(205, 205, 205, 1);;
   }
   .signingoogle-btn{
     padding: 10px 80px;
+    background-color:rgba(243, 249, 250, 1);
+    border: none;
+    border-radius: 10px;
+  }
+  .signinfacebook-btn{
+    padding: 10px 70px;
     background-color:rgba(243, 249, 250, 1);
     border: none;
     border-radius: 10px;
@@ -490,7 +503,7 @@ color: rgba(205, 205, 205, 1);;
     justify-content: center;
     align-items: center;
   }
-  .inbox-size{
+  .inbox-size {
     width: 60px;
     height: 60px;
     border: 1px solid rgba(96, 96, 96, 1);
@@ -498,7 +511,16 @@ color: rgba(205, 205, 205, 1);;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+    text-align: center;
+    font-size: 18px; 
+    padding: 0;
+    outline: none;
+    background-color: #fff;
+}
+
+.inbox-size:focus {
+   border: 1px solid black;
+}
   .send-btn{
     border: none;
     background-color: transparent;
@@ -512,6 +534,103 @@ color: rgba(205, 205, 205, 1);;
     justify-content: center;
     align-items: center;
   }
+.listingsearh-bg {
+    background-color: transparent;
+    border: none;
+    outline: none; 
+    padding: 5px 0px;
+    font-size: 14px;
+}
+.listingsearh-bg:focus {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.listingsearh-bg:hover {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.listingsearh-bg:checked {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.searchform-group {
+    display: flex;
+    flex-direction: column;
+}
+.searchform-group label {
+    font-weight: 700;
+}
+.listingform-bg {
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 14px 31px 0px rgba(0, 0, 0, 0.05);
+}
+.listingsearchicon-size {
+    height: 50px;
+    width: 50px;
+    background-color: var(--blue);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+.listingborder-right{
+    border-right: 1px solid rgba(221, 221, 221, 1)
+}
+.high-fives-title {
+    position: relative;
+}
+.high-fives-title::after {
+    content: ""; 
+    display: block;
+    width: 400px;
+    height: 10px;
+    background-color: rgba(53, 81, 182, 0.5);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 35px;
+}
+.appartment-bg{
+    background: rgba(255, 255, 255, 0.18);
+    border: 2px solid rgba(255, 255, 255, 0.34);
+    box-shadow: 0px 10px 24px 0px rgba(0, 0, 0, 0.05);
+
+}
+.listingshare-size{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal-close {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: rgba(151, 151, 151, 1) !important;
+    color: white !important;
+    position: relative;
+}
+.modal-close:hover, .modal-close:focus{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: rgba(151, 151, 151, 1) !important;
+    position: relative;
+}
+.modal-close::before {
+    content: "×";
+    font-size: 40px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
   @media (max-width: 1200px) {
     .hero-main-pic::before {
         left: 50px;
@@ -537,18 +656,28 @@ color: rgba(205, 205, 205, 1);;
         top: 100px;
         width: 60px;
     }
-}
-@media screen and (max-width:576px){
-    .detail-btn{
-        padding: 5px 12px;
-        background-color: var(--blue);
-        color: white;
-        border: 0px;
-        border-radius: 10px;
+    .listingform-bg {
+        flex-direction: column;
     }
-    .hero-main-pic::before, 
-    .hero-main-pic::after {
-        display: none; 
+    
+    .searchform-group {
+        width: 100%; 
+        margin-bottom: 10px;
+    }
+
+    .searchform-group label {
+        margin-bottom: 5px;
+    }
+    .listingsearchicon-size {
+        width: 40px;
+        height: 40px;
+        margin-top: 10px;
+    }
+    .listingsearh-bg {
+        padding: 10px 0; 
+    }
+    .listingborder-right{
+        border-right: none
     }
     .simplified-price {
         background-color: #3551B6;
@@ -562,5 +691,68 @@ color: rgba(205, 205, 205, 1);;
         border-radius: 20px;
         min-height: 350px;
         min-width: 200px; 
+    }
+}
+@media screen and (max-width:576px){
+    .detail-btn{
+        padding: 5px 12px;
+        background-color: var(--blue);
+        color: white;
+        border: 0px;
+        border-radius: 10px;
+    }
+    .hero-main-pic::before, 
+    .hero-main-pic::after {
+        display: none; 
+    }
+    .high-fives-title {
+        position: relative;
+    }
+    .high-fives-title::after {
+        content: ""; 
+        display: block;
+        width: 290px;
+        height: 10px;
+        background-color: rgba(53, 81, 182, 0.5);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        top: 25px;
+    }
+    .signup-btn{
+        background-color: var(--green);
+        padding: 8px 100px;
+        border-radius: 10px;
+        color: black;
+        border: none;
+        width: 100%;
+      }
+      .signingoogle-btn{
+        padding: 8px 50px;
+        background-color:rgba(243, 249, 250, 1);
+        border: none;
+        border-radius: 10px;
+        width: 100%;
+      }
+      .signinfacebook-btn{
+        padding: 8px 50px;
+        background-color:rgba(243, 249, 250, 1);
+        border: none;
+        border-radius: 10px;
+        width: 100%;
+      }
+      .inbox-size {
+        width: 40px;
+        height: 40px;
+        border: 1px solid rgba(96, 96, 96, 1);
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 18px; 
+        padding: 0;
+        outline: none;
+        background-color: #fff;
     }
 }

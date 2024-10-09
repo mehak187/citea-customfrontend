@@ -19,12 +19,35 @@
     <section class="listing-color py-5">
         <div class="container">
             <div class="col-12">
-                <h1 class="fw-bold black-color text-center">Find Your Perfect Getaway!</h1>
-                <div class="d-flex justify-content-center">
-                    <p class="mb-0 mt-4 listinghero-para text-center">Searching for a spot to unwind? Let us help you
-                        discover the
-                        best properties that feel just like home—or maybe even better!</p>
-                </div>
+                    <form>
+                        <div class="d-flex justify-content-between listingform-bg rounded-4 p-3">
+                            <div class="searchform-group listingborder-right">
+                                <label for="location">Enter Location:</label>
+                                <input type="text" id="location" name="location" placeholder="Enter a city"
+                                    class="border-0 listingsearh-bg ">
+                            </div>
+                            <div class="searchform-group listingborder-right">
+                                <label for="checkindate">Check In:</label>
+                                <input type="date" id="checkindate" name="checkIn-date" placeholder="Add Dates"
+                                    class="border-0 listingsearh-bg">
+                            </div>
+                            <div class="searchform-group listingborder-right">
+                                <label for="checkoutdate">Check out:</label>
+                                <input type="date" id="checkoutdate" name="checkout-date" placeholder="Add Dates"
+                                    class="border-0 listingsearh-bg">
+                            </div>
+                            <div class="searchform-group">
+                                <label for="guest">Guests:</label>
+                                <input type="text" id="guest" name="Guest" placeholder="Add Guest"
+                                    class="border-0 listingsearh-bg">
+                            </div>
+                            <a href="#" class="text-decoration-none">
+                                <div class="listingsearchicon-size">
+                                    <img src="/imgs/faserach-listing.svg" alt="search" class="search-icon">
+                                </div>
+                            </a>
+                        </div>
+                    </form>
             </div>
         </div>
     </section>
@@ -849,7 +872,7 @@
         <div class="footer py-5 border-bottom">
             <div class="container">
                 <div class="row">
-                    <div class="col-xxl-3 col-md-6">
+                    <div class="col-xxl-3">
                         <div>
                             <a href="#" class="text-decoration-none">
                                 <h3 class="white-color fw-bold">LOGO</h3>
@@ -927,13 +950,14 @@
         </div>
         <div class="footer-text py-2">
             <div class="container">
-                <div class="row py-5">
+                <div class="row py-4">
                     <div class="col-md-6">
                         <div>
-                            <p class="mb-0 white-color">© 2024 simplihost.com | All rights raserved</p>
+                            <p class="mb-0 white-color text-md-start text-center">© 2024 simplihost.com | All rights
+                                raserved</p>
                         </div>
                     </div>
-                    <div class="col-md-6 d-flex justify-content-md-end">
+                    <div class="col-md-6 d-flex justify-content-md-end justify-content-center">
                         <div>
                             <p class="mb-0 white-color">Created with love by thecreation.design</p>
                         </div>
