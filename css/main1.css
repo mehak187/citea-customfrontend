@@ -325,11 +325,11 @@ max-width: 400px;
     align-items: center;
 }
 .furnushedapartment-size{
-    height: 600px;
+    /* height: 600px; */
     object-fit: cover;
 }
 .furnushedapartment-size2{
-    height: 300px;
+    /* height: 300px; */
     object-fit: cover;
 }
 .furnushedapartment-size img {
