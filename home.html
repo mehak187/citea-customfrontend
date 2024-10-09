@@ -16,9 +16,43 @@
 </head>
 
 <body>
-    <section class="hero-section py-5">
+    <section class="hero-section ">
+        <nav class="navbar">
+            <div class="logo">
+              <img src="/imgs/navlogo.svg" alt="SimpliHost Logo">
+            </div>
+            <ul class="nav-links">
+              <li><a href="#" class="active">Home</a></li>
+              <li><a href="#">Listings</a></li>
+              <li class="dropdown-parent">
+                <a href="#">Features <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown">
+                  <li><a href="#">Feature 1</a></li>
+                  <li><a href="#">Feature 2</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Pricing</a></li>
+              <li class="dropdown-parent">
+                <a href="#">Resources <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown">
+                  <li><a href="#">Resource 1</a></li>
+                  <li><a href="#">Resource 2</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="auth-buttons">
+              <a href="#" class="login-btn1 fw-semi">Log In</a>
+              <a href="#" class="signup-btn fw-semi">Start Your Free Trial</a>
+            </div>
+            <div class="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </nav>
         <div class="container">
-            <div class="row align-items-center">
+            <div class="row align-items-center pt-5">
                 <div class="col-lg-6">
                     <div>
                         <h1 class="fw-bold hero-text"><span class="green-color">Simplify</span> Your Rental Game!
@@ -419,6 +453,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script src="js/main.js"></script>
+   
 </body>
 
 </html>

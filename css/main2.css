@@ -60,6 +60,208 @@
 .litblue{
     color: var(--blue);
 }
+/* ..........Navbar.......... */
+.navbar {
+    background-color:#3551B6;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:25px 40px;
+    position: relative;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+  
+  .logo img {
+    height: 40px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+  .nav-links{
+    margin-bottom: 0 !important;
+  }
+  
+  .nav-links li {
+    position: relative;
+  }
+  
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 0 1.5rem;
+    display: block;
+  }
+  
+  .nav-links li a.active {
+    color:var(--d-green);
+  }
+  
+  .nav-links li a:hover {
+    color: var(--d-green);
+  }
+  
+  .nav-links .dropdown-parent:hover .dropdown {
+    display: block;
+  }
+  
+  .nav-links .dropdown-parent a {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-links .dropdown-parent i {
+    margin-left: 5px;
+  }
+  
+  .nav-links .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--blue);
+    min-width: 150px;
+    border-radius: 4px;
+    overflow: hidden;
+    z-index: 999;
+  }
+  
+  .nav-links .dropdown li a {
+    padding: 10px 15px;
+    white-space: nowrap;
+  }
+  
+  .nav-links .dropdown li a:hover {
+    background-color: var(--d-green);
+    color: white;
+  }
+  
+  .auth-buttons {
+    display: flex;
+  }
+  
+  .auth-buttons a {
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    color: white;
+    margin-left: 10px;
+    white-space: nowrap;
+  }
+  
+  .login-btn1 {
+    border: 1px solid var(--d-green);
+  }
+  
+  .signup-btn {
+    background-color:var(--d-green) !important;
+  }
+  
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+  }
+  
+  /* Responsive at 1110px */
+  @media (max-width: 1110px) {
+    .nav-links {
+      display: none;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background-color: #2A3D7D;
+      width: 100%;
+      flex-direction: column;
+      padding: 20px;
+      z-index: 999;
+    }
+  
+    .nav-links.active {
+      display: flex;
+      justify-content: flex-start; /* Align links to the left */
+    }
+  
+    .nav-links li {
+      padding: 10px 0;
+      text-align: left; /* Align text to the left */
+    }
+  
+    .hamburger {
+      display: flex;
+    }
+  }
+  
+  /* Responsive at 540px */
+  @media (max-width: 540px) {
+    /* Hide the auth-buttons from the top navbar */
+    .auth-buttons {
+      display: none;
+    }
+  
+    /* Show auth-buttons at the bottom center with other links */
+    .nav-links {
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start; /* Align links to the left */
+    }
+  
+    .nav-links li {
+      text-align: left;
+      width: 100%;
+    }
+  
+    /* Add buttons to the bottom of the dropdown */
+    .nav-links::after {
+      content: '';
+      display: block;
+      height: 30px; /* Spacing for buttons */
+    }
+  
+    /* Center the login and signup buttons with other links */
+    .nav-links.active::after {
+      content: '';
+      display: block;
+      height: auto;
+    }
+  
+    .nav-links.active li {
+      margin-bottom: 15px;
+    }
+  
+    .nav-links.active .auth-buttons {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin-top: 15px;
+    }
+  
+    .nav-links.active .auth-buttons a {
+      text-align: center;
+      margin: 10px 0;
+      width: 80%; /* Buttons fill the width with some margin */
+    }
+  }
+  
+
+
+
+
+
+
+
+
 .feature-div{
     max-width: 600px;
 }
@@ -112,6 +314,50 @@
 .trans-shadow{
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)),
 linear-gradient(110.72deg, rgba(255, 255, 255, 0.3) -2.91%, rgba(255, 255, 255, 0) -2.9%, rgba(255, 255, 255, 0) 17.95%, rgba(255, 255, 255, 0.3) 19.42%, rgba(255, 255, 255, 0.3) 34.01%, rgba(255, 255, 255, 0) 36.21%, rgba(255, 255, 255, 0) 50.86%, rgba(255, 255, 255, 0.3) 53.07%, rgba(255, 255, 255, 0.3) 66.11%, rgba(255, 255, 255, 0) 68.32%);
+}
+.colrPic-main{
+    backdrop-filter: blur(9.84276294708252px);
+    box-shadow: 0px -1.23px 2.46px 0px #FFFFFF inset;
+    box-shadow: 0px 9.84px 41.83px 0px #00000014;
+    position: relative;
+    z-index: 1;
+}
+.colr-pic{
+    position: absolute;
+    top: -9px;
+    left: -9px;
+    z-index: -1;
+}
+.colr-img{
+    height: 100%;
+    width: 85px;
+}
+.unlock-card1{
+    border: 1px solid #84D9C2;
+}
+.unlock-card2{
+    border: 1px solid #B098E4;
+}
+.unlock-card3{
+    border: 1px solid #F5A696;
+}
+.unlock-card4{
+    border: 1px solid #7690CC;
+}
+.unlock-card5{
+    border: 1px solid #EFBB60;
+}
+.unlock-card6{
+    border: 1px solid #59D560;
+}
+.unlock-card7{
+    border: 1px solid #6FC08F;
+}
+.unlock-card8{
+    border: 1px solid #79A5EC;
+}
+.unlock-card9{
+    border: 1px solid #DB847E;
 }
 .leran-btn{
     padding: 10px 30px;
@@ -178,6 +424,9 @@ linear-gradient(110.72deg, rgba(255, 255, 255, 0.3) -2.91%, rgba(255, 255, 255, 
 .communication-sec{
     background: linear-gradient(to bottom, #ECFDFA 0%, #FFFFFF 100%);
 }
+.unified-border{
+    border: 9.35px solid #FFFFFFB2;
+}
 .commCard-btn{
     padding: 14px 30px;
     border-radius: 10px;
@@ -204,8 +453,6 @@ linear-gradient(110.72deg, rgba(255, 255, 255, 0.3) -2.91%, rgba(255, 255, 255, 
     padding: 10px 15px;
     border-radius: 30px;
 }
-
-
 .rang-contanr{
     text-align: center;
     background-color: white;
@@ -218,21 +465,17 @@ linear-gradient(110.72deg, rgba(255, 255, 255, 0.3) -2.91%, rgba(255, 255, 255, 
 .slider-container {
     margin: 20px 0;
 }
-
 .slider {
     width: 100%;
 }
-
 .range-labels {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
 }
-
 .range-labels span {
     color: #2d2d2d;
 }
-
 #propertyCount {
     width: 50px;
     text-align: center;
@@ -241,12 +484,10 @@ linear-gradient(110.72deg, rgba(255, 255, 255, 0.3) -2.91%, rgba(255, 255, 255, 
     font-weight: bold;
     font-size: 1.2em;
 }
-
 #price {
     color: #007bff;
     font-weight: bold;
 }
-
 button.sign-up {
     background-color: #007bff;
     color: white;
@@ -256,7 +497,6 @@ button.sign-up {
     cursor: pointer;
     font-size: 1em;
 }
-
 button.sign-up:hover {
     background-color: #0056b3;
 }

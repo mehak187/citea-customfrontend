@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <title>Responsive Navbar</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
+  <style>
+ /* General Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+  background-color: #2A3D7D;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:25px 40px;
+  position: relative;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.logo img {
+  height: 30px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  padding: 0 1.5rem;
+  display: block;
+}
+
+.nav-links li a.active {
+  color: #17E9E1;
+}
+
+.nav-links li a:hover {
+  color: #17E9E1;
+}
+
+.nav-links .dropdown-parent:hover .dropdown {
+  display: block;
+}
+
+.nav-links .dropdown-parent a {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links .dropdown-parent i {
+  margin-left: 5px;
+}
+
+.nav-links .dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #334680;
+  min-width: 150px;
+  border-radius: 4px;
+  overflow: hidden;
+  z-index: 999;
+}
+
+.nav-links .dropdown li a {
+  padding: 10px 15px;
+  white-space: nowrap;
+}
+
+.nav-links .dropdown li a:hover {
+  background-color: #17E9E1;
+  color: white;
+}
+
+.auth-buttons {
+  display: flex;
+}
+
+.auth-buttons a {
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  color: white;
+  margin-left: 10px;
+  white-space: nowrap;
+}
+
+.login-btn {
+  border: 1px solid white;
+}
+
+.signup-btn {
+  background-color: #17E9E1;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 3px 0;
+}
+
+/* Responsive at 1110px */
+@media (max-width: 1110px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #2A3D7D;
+    width: 100%;
+    flex-direction: column;
+    padding: 20px;
+    z-index: 999;
+  }
+
+  .nav-links.active {
+    display: flex;
+    justify-content: flex-start; /* Align links to the left */
+  }
+
+  .nav-links li {
+    padding: 10px 0;
+    text-align: left; /* Align text to the left */
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+/* Responsive at 540px */
+@media (max-width: 540px) {
+  /* Hide the auth-buttons from the top navbar */
+  .auth-buttons {
+    display: none;
+  }
+
+  /* Show auth-buttons at the bottom center with other links */
+  .nav-links {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Align links to the left */
+  }
+
+  .nav-links li {
+    text-align: left;
+    width: 100%;
+  }
+
+  /* Add buttons to the bottom of the dropdown */
+  .nav-links::after {
+    content: '';
+    display: block;
+    height: 30px; /* Spacing for buttons */
+  }
+
+  /* Center the login and signup buttons with other links */
+  .nav-links.active::after {
+    content: '';
+    display: block;
+    height: auto;
+  }
+
+  .nav-links.active li {
+    margin-bottom: 15px;
+  }
+
+  .nav-links.active .auth-buttons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .nav-links.active .auth-buttons a {
+    text-align: center;
+    margin: 10px 0;
+    width: 80%; /* Buttons fill the width with some margin */
+  }
+}
+
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="logo.png" alt="SimpliHost Logo">
+    </div>
+    <ul class="nav-links">
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#">Listings</a></li>
+      <li class="dropdown-parent">
+        <a href="#">Features <i class="fas fa-chevron-down"></i></a>
+        <ul class="dropdown">
+          <li><a href="#">Feature 1</a></li>
+          <li><a href="#">Feature 2</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Pricing</a></li>
+      <li class="dropdown-parent">
+        <a href="#">Resources <i class="fas fa-chevron-down"></i></a>
+        <ul class="dropdown">
+          <li><a href="#">Resource 1</a></li>
+          <li><a href="#">Resource 2</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="auth-buttons">
+      <a href="#" class="login-btn">Log In</a>
+      <a href="#" class="signup-btn">Start Your Free Trial</a>
+    </div>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <script src="script.js"></script>
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    const links = document.querySelectorAll('.nav-links li a');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    // Add click event to each link to make it active
+    links.forEach(link => {
+      link.addEventListener('click', function() {
+        // Remove active class from all links
+        links.forEach(link => link.classList.remove('active'));
+        
+        // Add active class to the clicked link
+        this.classList.add('active');
+        
+        // Close menu on mobile after selection
+        navLinks.classList.remove('active');
+      });
+    });
+  </script>
+</body>
+</html>
