@@ -400,6 +400,7 @@ color: rgba(205, 205, 205, 1);;
 .login-size {
     width: 100px;
     height: 100px;
+    object-fit: fit;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -630,6 +631,10 @@ color: rgba(205, 205, 205, 1);;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+.listingsafety-border{
+    border: 0.5px solid rgba(0, 0, 0, 1);
+    border-radius: 10px;
 }
   @media (max-width: 1200px) {
     .hero-main-pic::before {
