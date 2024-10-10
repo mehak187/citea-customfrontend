@@ -6,16 +6,23 @@ const hamburger = document.querySelector('.hamburger');
       navLinks.classList.toggle('active');
     });
 
-    // Add click event to each link to make it active
     links.forEach(link => {
       link.addEventListener('click', function() {
-        // Remove active class from all links
         links.forEach(link => link.classList.remove('active'));
         
-        // Add active class to the clicked link
         this.classList.add('active');
         
-        // Close menu on mobile after selection
         navLinks.classList.remove('active');
       });
     });
+
+
+
+    function updatePricing() {
+      const rangeValue = document.getElementById('propertyRange').value;
+      const propertyCount = document.getElementById('propertyCount');
+      const price = document.getElementById('price');
+      propertyCount.value = rangeValue;
+      const calculatedPrice = rangeValue * 12; 
+      price.innerText = `$${calculatedPrice}`;
+  }

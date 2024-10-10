@@ -95,11 +95,6 @@ body {
   color: white;
 }
 
-.auth-buttons {
-  display: flex;
-
-}
-
 .auth-buttons a {
   text-decoration: none;
   padding: 8px 16px;
@@ -162,11 +157,7 @@ body {
 
 /* Responsive at 540px */
 @media (max-width: 540px) {
-  /* Hide the auth-buttons from the top navbar */
-  .auth-buttons {
-    display: none;
-  }
-
+ 
 }
 
   </style>
@@ -174,7 +165,7 @@ body {
 <body>
   <nav class="navbar">
     <div class="logo">
-      <img src="logo.png" alt="SimpliHost Logo">
+      <img src="imgs/navlogo.svg" alt="SimpliHost Logo">
     </div>
     <ul class="nav-links">
       <li><a href="#" class="active">Home</a></li>
@@ -195,8 +186,12 @@ body {
         </ul>
       </li>
       <li><a href="#">Contact</a></li>
+      <div class="auth-buttons d-sm-none">
+        <a href="#" class="login-btn">Log In</a>
+        <a href="#" class="signup-btn">Start Your Free Trial</a>
+      </div>
     </ul>
-    <div class="auth-buttons">
+    <div class="auth-buttons d-none d-sm-flex">
       <a href="#" class="login-btn">Log In</a>
       <a href="#" class="signup-btn">Start Your Free Trial</a>
     </div>

@@ -58,10 +58,10 @@
     background-color: var(--orange);
 }
 .litblue{
-    color: var(--blue);
+    color: var(--blue) !important;
 }
 /* ..........Navbar.......... */
-.navbar {
+/* .navbar {
     background-color:#3551B6;
     color: #fff;
     display: flex;
@@ -180,9 +180,8 @@
     height: 3px;
     background-color: white;
     margin: 3px 0;
-  }
-  
-  /* Responsive at 1110px */
+  }*/
+/*   
   @media (max-width: 1110px) {
     .nav-links {
       display: none;
@@ -199,12 +198,12 @@
   
     .nav-links.active {
       display: flex;
-      justify-content: flex-start; /* Align links to the left */
+      justify-content: flex-start;
     }
   
     .nav-links li {
       padding: 10px 0;
-      text-align: left; /* Align text to the left */
+      text-align: left; 
     }
   
     .hamburger {
@@ -212,25 +211,22 @@
     }
   }
   
-  /* Responsive at 540px */
+
 @media (max-width: 540px) {
-    /* Hide the auth-buttons from the top navbar */
     .auth-buttons {
       display: none;
     }
   
-  }
-  .hero-section, .common-hero{
+  }  */
+
+
+
+
+
+
+.hero-section, .common-hero{
     padding-top: 170px !important;
   }
-
-
-
-
-
-
-
-
 .feature-div{
     max-width: 600px;
 }
@@ -243,7 +239,7 @@
 .feature-para, .comm-para, .effort-para, .guest-para{
     line-height: 30px;
 }
-.logoPics-sec{
+.logoPics-sec, .rang-section{
     margin-top:-135px;
 }
 .logoImg-main{
@@ -254,7 +250,7 @@
     background-color: white;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
  }
-.logoimg-main{
+.logopic-main{
     padding: 10px 30px;
 }
 .logo-imgs{
@@ -267,6 +263,7 @@
 .explore-btn{
     padding: 10px 30px;
     background-color: var(--blue);
+    border: 0;
     border-radius: 8px;
     color: white;
 }
@@ -425,52 +422,81 @@ linear-gradient(110.72deg, rgba(255, 255, 255, 0.3) -2.91%, rgba(255, 255, 255, 
 .rang-contanr{
     text-align: center;
     background-color: white;
-    padding: 20px;
     border: 4px solid #3551B633;
-    border-radius: 10px;
+    border-radius: 30px;
     box-shadow: 0px 0px 24px 0px #DADADAB2;
-    max-width: 700px;
-}
-.slider-container {
-    margin: 20px 0;
 }
 .slider {
     width: 100%;
+}
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 20px;
+    background: #E8FEFF;
+    border-radius: 25px;
+    outline: none;
 }
 .range-labels {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
 }
-.range-labels span {
-    color: #2d2d2d;
+.input-gray{
+    background-color:#F1F1F1 !important;
 }
-#propertyCount {
-    width: 50px;
+.propCount {
+    width: 70px;
     text-align: center;
     border: none;
-    background-color: transparent;
-    font-weight: bold;
-    font-size: 1.2em;
 }
-#price {
-    color: #007bff;
-    font-weight: bold;
+.rang-btn-div {
+    margin-bottom: -80px !important;
 }
-button.sign-up {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
+.priceLogo-sec{
+    margin-top:0 !important;
 }
-button.sign-up:hover {
-    background-color: #0056b3;
+.questionHero-img1{
+    width: 100%;
+    height: 320px;
 }
-
-
+.questionHero-img2{
+    width: 100%;
+    height: 300px;
+}
+.questionHero-img3{
+    width: 100%;
+    height: 30px;
+}
+.questionHero-img4{
+    width: 100%;
+    height: 50px;
+}
+.question-main{
+    position: relative;
+}
+.question-p1{
+    position: relative;
+}
+.question-p2{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.question-p3{
+    position: absolute;
+    left: -134px;
+    top: 65px;
+}
+.question-p4{
+    position: absolute;
+    right: -125px;
+    top: 0;
+}
+.questionhero-sec{
+    min-height: 0 !important;
+    padding-bottom: 0 !important;
+}
 
 
 

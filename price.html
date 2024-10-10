@@ -18,7 +18,7 @@
 
 <body>
 
-    <section class="commhero-sec pt-5 bg-grey d-flex align-items-center">
+    <section class="commhero-sec pt-5 bg-grey d-flex align-items-center commhero-sec">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -40,50 +40,155 @@
             </div>
         </div>
     </section>
-    <section class="rangslide-sec">
-        <div class="container rang-contanr">
-            <h1>Everything You Want, All Included!</h1>
-            <p>Only pay for what you need. Our pricing scales as you grow.</p>
-
-            <div class="slider-container">
-                <input type="range" min="0" max="100" value="25" id="propertyRange" oninput="updatePricing()"
-                    class="slider">
-                <div class="range-labels">
-                    <span>0</span>
-                    <span>25</span>
-                    <span>50</span>
-                    <span>75</span>
-                    <span>100</span>
-                </div>
-            </div>
-
-            <p>For <input type="text" id="propertyCount" value="25" readonly> properties, your pricing is <span
-                    id="price">$300</span> per month.</p>
-
-            <button class="sign-up">Sign Up Now!</button>
-        </div>
-    </section>
-    <section class="effort-sec py-5">
+    <section class="rang-section py-5">
         <div class="container">
-            <div class="text-center">
-                <h2 class="fw-bold">Get a Spiffy New Website or Jazz Up
-                    Your Old One!</h2>
-                <div>
-                    <img src="imgs/jazzp1.svg" alt="pic" class="img-fluid">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="row rang-contanr py-5 px-sm-5 px-3">
+                        <div class="col-12">
+                            <div>
+                                <h2 class="fw-bold litblue mb-4">Everything You Want, All Included!</h2>
+                                <p class="mb-5">Only pay for what you need. Our pricing scales as you grow.</p>
+
+                                <div class="slider-container mb-4">
+                                    <div class="range-labels mb-2 fw-semi">
+                                        <span>0</span>
+                                        <span>25</span>
+                                        <span>50</span>
+                                        <span>75</span>
+                                        <span>100</span>
+                                    </div>
+                                    <input type="range" min="0" max="100" value="25" id="propertyRange"
+                                        oninput="updatePricing()" class="slider">
+                                </div>
+
+                                <p class="mb-3 fw-bold">For <input type="text" class="litblue input-gray propCount fw-bold"
+                                        id="propertyCount" value="25" readonly> properties, your pricing is <span
+                                        class="litblue propPrice" id="price">$300</span> per month.</p>
+                                <div class="rang-btn-div">
+                                    <button class="rang-btn price-btn1 fw-semi">Sign Up Now!</button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <img src="imgs/jazzp2.svg" alt="pic" class="img-fluid">
-                </div>
-                <p class="mb-0 effort-para mt-5">Simplihost comes with a built-in, ready-to-go direct booking site. It's
-                    fully customizable—just add your branding and start booking guests
-                    without those pesky platform fees. No coding required! Already have a fabulous website? No problem!
-                    Sync it with our platform using
-                    our handy embeddable widget. Plus, our system keeps your calendars perfectly in sync with all OTAs.
-                </p>
             </div>
         </div>
     </section>
-    <section class="around py-5">
+    <section class="logoPics-sec py-5 priceLogo-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-10 logoImg-main">
+                    <h3 class="mb-4 litblue fw-bold">Get More Done with Our Awesome Integrations!</h3>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-2 col-md-3 col-sm-4 mb-3">
+                            <div
+                                class="bg-grey logopic-main rounded-3 d-flex justify-content-center align-items-center">
+                                <img src="imgs/logo-p1.svg" alt="logo" class="logo-imgsvacation-cardPic">
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4 mb-3">
+                            <div
+                                class="bg-grey logopic-main rounded-3 d-flex justify-content-center align-items-center">
+                                <img src="imgs/logo-p2.svg" alt="logo" class="logo-imgs">
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4 mb-3">
+                            <div
+                                class="bg-grey logopic-main rounded-3 d-flex justify-content-center align-items-center">
+                                <img src="imgs/logo-p3.svg" alt="logo" class="logo-imgs">
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4 mb-3">
+                            <div
+                                class="bg-grey logopic-main rounded-3 d-flex justify-content-center align-items-center">
+                                <img src="imgs/logo-p4.svg" alt="logo" class="logo-imgs">
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4 mb-3">
+                            <div
+                                class="bg-grey logopic-main rounded-3 d-flex justify-content-center align-items-center">
+                                <img src="imgs/logo-p5.svg" alt="logo" class="logo-imgs">
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4 mb-3">
+                            <div
+                                class="bg-grey logopic-main rounded-3 d-flex justify-content-center align-items-center">
+                                <img src="imgs/logo-p6.svg" alt="logo" class="logo-imgs">
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4 mb-3 ms-lg-5 ms-0">
+                            <div
+                                class="bg-grey logopic-main rounded-3 d-flex justify-content-center align-items-center">
+                                <img src="imgs/logo-p7.svg" alt="logo" class="logo-imgs">
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4 mb-3">
+                            <div
+                                class="bg-grey logopic-main rounded-3 d-flex justify-content-center align-items-center">
+                                <img src="imgs/logo-8.svg" alt="logo" class="logo-imgs">
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4 mb-3">
+                            <div
+                                class="bg-grey logopic-main rounded-3 d-flex justify-content-center align-items-center">
+                                <img src="imgs/logo-p9.svg" alt="logo" class="logo-imgs">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button type="button" class="border-0 explore-btn mt-2">Explore the Full List</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pricing py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-5">
+                    <h4 class="blue-color fw-bold fs-4">Pricing Made Simple</h4>
+                    <p class="mb-0 black-color fs-5 mt-3">One simple plan for all your needs!</p>
+                    <div class="mt-4">
+                        <a href="#" class="text-decoration-none more-btn px-5 py-2">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-7 mt-4 mt-xl-4">
+                    <div class="row align-items-end">
+                        <div class="col-md-6 d-flex flex-column mt-3 mt-md-0">
+                            <div class="simplified-price p-5 flex-grow-1 d-flex flex-column">
+                                <h5 class="fw-bold white-color mt-4">Simplified Pricing</h5>
+                                <p class="mb-0 white-color mt-4">Why buy multiple systems when you can have it
+                                    all-in-one? Our plan gives you everything you need, hassle-free</p>
+                                <div class="mt-auto">
+                                    <a href="#" class="text-decoration-none simplified-btn d-block text-center">
+                                        Get Your Price
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex flex-column mt-3 mt-md-0">
+                            <div class="full-feature p-5 flex-grow-1 d-flex flex-column">
+                                <h5 class="fw-bold blue-color mt-4">Full Features</h5>
+                                <p class="mb-0 blue-color mt-4">No more juggling add-ons! Get the best of all our
+                                    features right from the start. It's all included!</p>
+                                <div class=" mt-auto">
+                                    <a href="#" class="text-decoration-none fullyfeature-btn d-block text-center">
+                                        Sign Up Now
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="around py-5 mt-5">
         <div class="container">
             <div class="row">
                 <div class="d-flex flex-column flex-md-row justify-content-between">
@@ -169,24 +274,25 @@
                 <div class="col-lg-6">
                     <div class="row">
                         <div class="col-sm-6 mb-4 mb-sm-0">
-                            <div class="gotBack-shadow p-4 rounded-4 bg-white">
+                            <div class="gotBack-shadow p-4 rounded-4 bg-white h-100 d-flex flex-column">
                                 <div class="mb-5">
                                     <h5 class="fw-semi">Average Customer
                                         Service Rating</h5>
                                 </div>
-                                <div class="bg-exsky p-4 rounded-4 text-center">
+                                <div class="bg-exsky p-4 rounded-4 text-center mt-auto">
                                     <h3 class="fw-bold litblue">+95%</h3>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-6">
-                            <div class="gotBack-shadow p-4 rounded-4 bg-white">
+                            <div class="gotBack-shadow p-4 rounded-4 bg-white h-100 d-flex flex-column">
                                 <div class="mb-5">
-                                    <h5 class="fw-semi">Support with agents
-                                        all over the world</h5>
+                                    <h5 class="fw-semi">We’re here when you need 
+                                        it! We support you all week(and weekend) long!</h5>
                                 </div>
-                                <div class="bg-exsky p-4 rounded-4 text-center">
-                                    <h3 class="fw-bold litblue">24/7</h3>
+                                <div class="bg-exsky p-4 rounded-4 text-center mt-auto">
+                                    <h3 class="fw-bold litblue">7 days 
+                                        a week</h3>
                                 </div>
                             </div>
                         </div>
@@ -224,13 +330,17 @@
                                 <p class="mb-0 fw-bold">All features</p>
                                 <ul class="list-unstyled footer-list">
                                     <li><a href="#" class="text-decoration-none white-color">Unified inbox</a></li>
-                                    <li><a href="#" class="text-decoration-none white-color">Smart Devices Integration</a>
+                                    <li><a href="#" class="text-decoration-none white-color">Smart Devices
+                                            Integration</a>
                                     </li>
-                                    <li><a href="#" class="text-decoration-none white-color">Tasks and Checklists</a></li>
-                                    <li><a href="#" class="text-decoration-none white-color">Automated Guest Messaging</a>
+                                    <li><a href="#" class="text-decoration-none white-color">Tasks and Checklists</a>
+                                    </li>
+                                    <li><a href="#" class="text-decoration-none white-color">Automated Guest
+                                            Messaging</a>
                                     </li>
                                     <li><a href="#" class="text-decoration-none white-color">Maintenance</a></li>
-                                    <li><a href="#" class="text-decoration-none white-color">Inventory Manaegement</a></li>
+                                    <li><a href="#" class="text-decoration-none white-color">Inventory Manaegement</a>
+                                    </li>
                                     <li><a href="#" class="text-decoration-none white-color">Automation</a></li>
                                     <li><a href="#" class="text-decoration-none white-color">Direct Booking</a></li>
                                 </ul>
@@ -262,7 +372,7 @@
                                             <i class="fa-brands fa-youtube"></i></a>
                                         <a href="#" class="text-decoration-none white-color f-size ms-3">
                                             <i class="fa-brands fa-linkedin"></i></a>
-    
+
                                     </li>
                                 </ul>
                             </div>
@@ -276,7 +386,8 @@
                 <div class="row py-4">
                     <div class="col-md-6">
                         <div>
-                            <p class="mb-0 white-color text-start text-sm-center">© 2024 simplihost.com | All rights raserved</p>
+                            <p class="mb-0 white-color text-start text-sm-center">© 2024 simplihost.com | All rights
+                                raserved</p>
                         </div>
                     </div>
                     <div class="col-md-6 d-flex justify-content-md-end justify-content-center">
@@ -292,20 +403,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script src="js/main.js"></script>
-    <script>
-        function updatePricing() {
-            const rangeValue = document.getElementById('propertyRange').value;
-            const propertyCount = document.getElementById('propertyCount');
-            const price = document.getElementById('price');
-
-            // Update property count
-            propertyCount.value = rangeValue;
-
-            // Calculate the price based on the range value
-            const calculatedPrice = rangeValue * 12; // Assuming $12 per property
-            price.innerText = `$${calculatedPrice}`;
-        }
-    </script>
 </body>
 
 </html>
