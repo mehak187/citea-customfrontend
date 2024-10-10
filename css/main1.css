@@ -862,6 +862,12 @@
     justify-content: center;
     align-items: center;
 }
+.reverse-btn{
+    background-color: var(--blue);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
 .custom-padd {
     padding: 0 150px
 }
