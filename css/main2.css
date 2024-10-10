@@ -71,6 +71,11 @@
     position: relative;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
+    position: fixed;
+    z-index: 11;
+    top: 0;
+    left: 0;
+    width: 100%;
   }
   
   .logo img {
@@ -78,7 +83,7 @@
   }
   
   .nav-links {
-    list-style: none;
+    list-style: none !important;
     display: flex;
     align-items: center;
   }
@@ -104,7 +109,10 @@
   .nav-links li a:hover {
     color: var(--d-green);
   }
-  
+  .dropdown{
+    list-style: none;
+  }
+
   .nav-links .dropdown-parent:hover .dropdown {
     display: block;
   }
@@ -184,6 +192,7 @@
       background-color: #2A3D7D;
       width: 100%;
       flex-direction: column;
+      align-items: flex-start;
       padding: 20px;
       z-index: 999;
     }
@@ -204,56 +213,16 @@
   }
   
   /* Responsive at 540px */
-  @media (max-width: 540px) {
+@media (max-width: 540px) {
     /* Hide the auth-buttons from the top navbar */
     .auth-buttons {
       display: none;
     }
   
-    /* Show auth-buttons at the bottom center with other links */
-    .nav-links {
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start; /* Align links to the left */
-    }
-  
-    .nav-links li {
-      text-align: left;
-      width: 100%;
-    }
-  
-    /* Add buttons to the bottom of the dropdown */
-    .nav-links::after {
-      content: '';
-      display: block;
-      height: 30px; /* Spacing for buttons */
-    }
-  
-    /* Center the login and signup buttons with other links */
-    .nav-links.active::after {
-      content: '';
-      display: block;
-      height: auto;
-    }
-  
-    .nav-links.active li {
-      margin-bottom: 15px;
-    }
-  
-    .nav-links.active .auth-buttons {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      margin-top: 15px;
-    }
-  
-    .nav-links.active .auth-buttons a {
-      text-align: center;
-      margin: 10px 0;
-      width: 80%; /* Buttons fill the width with some margin */
-    }
   }
-  
+  .hero-section, .common-hero{
+    padding-top: 170px !important;
+  }
 
 
 
@@ -372,7 +341,7 @@ linear-gradient(110.72deg, rgba(255, 255, 255, 0.3) -2.91%, rgba(255, 255, 255, 
 }
 .accrdin-main {
     position: relative;
-    background-image: url('/imgs/accrdion-img.svg');
+    background-image: url('imgs/accrdion-img.svg');
     background-position: calc(100% - 25px) bottom;
     background-repeat: no-repeat;
     background-size: 300px;

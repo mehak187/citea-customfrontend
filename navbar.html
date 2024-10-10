@@ -97,6 +97,7 @@ body {
 
 .auth-buttons {
   display: flex;
+
 }
 
 .auth-buttons a {
@@ -139,6 +140,7 @@ body {
     background-color: #2A3D7D;
     width: 100%;
     flex-direction: column;
+    align-items: flex-start;
     padding: 20px;
     z-index: 999;
   }
@@ -165,48 +167,6 @@ body {
     display: none;
   }
 
-  /* Show auth-buttons at the bottom center with other links */
-  .nav-links {
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start; /* Align links to the left */
-  }
-
-  .nav-links li {
-    text-align: left;
-    width: 100%;
-  }
-
-  /* Add buttons to the bottom of the dropdown */
-  .nav-links::after {
-    content: '';
-    display: block;
-    height: 30px; /* Spacing for buttons */
-  }
-
-  /* Center the login and signup buttons with other links */
-  .nav-links.active::after {
-    content: '';
-    display: block;
-    height: auto;
-  }
-
-  .nav-links.active li {
-    margin-bottom: 15px;
-  }
-
-  .nav-links.active .auth-buttons {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 15px;
-  }
-
-  .nav-links.active .auth-buttons a {
-    text-align: center;
-    margin: 10px 0;
-    width: 80%; /* Buttons fill the width with some margin */
-  }
 }
 
   </style>

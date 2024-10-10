@@ -25,13 +25,13 @@
     align-items: center;
 }
 .hero-main-pic::before{
-    content: url(/imgs/heroleft.svg);
+    content: url(imgs/heroleft.svg);
     position: absolute;
     left:100px;
     top: 50px;
 }
 .hero-main-pic::after{
-    content: url(/imgs/heroright.svg);
+    content: url(imgs/heroright.svg);
     position: absolute;
     right:90px;
     top: 200px;
