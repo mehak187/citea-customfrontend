@@ -16,14 +16,97 @@
 </head>
 
 <body>
-    <section class="listing-color py-5">
-        <div class="container">
+    <section class="listing-color">
+        <nav class="navbar navbar-expand-lg simplihost-navbar bg-body-tertiary">
+            <div class="container-fluid custom-padd">
+                <a class="navbar-brand" href="home.html">
+                    <img src="/imgs/simplihost-navbar.svg" alt="logo" class="simplhostnnav-logo">
+                </a>
+                <button class="navbar-toggler focus-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item  mx-xl-3">
+                            <a class="nav-link " aria-current="page" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item mx-1 mx-xl-3">
+                            <a class="nav-link active" href="listing.html">Listings</a>
+                        </li>
+                        <li class="nav-item dropdown mx-1 mx-xl-3">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Feature
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Feature1</a></li>
+                                <li><a class="dropdown-item" href="#">Feature2</a></li>
+                                <li><a class="dropdown-item" href="#">Feature3</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item mx-1 mx-xl-3">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item dropdown mx-1 mx-xl-3">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Resources
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Resources1</a></li>
+                                <li><a class="dropdown-item" href="#">Resources2</a></li>
+                                <li><a class="dropdown-item" href="#">Resources3</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item mx-1 mx-xl-3">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <button class="simplihostlogin-btn me-2 px-3 px-lg-2 px-xl-4 py-2" type="button">Login</button>
+                    <button class="simplihosttrail-btn  px-2 px-xl-4   py-2" type="button">Start your Free Trial</button>
+                </div>
+            </div>
+        </nav>
+        <div class="container py-5">
             <div class="col-12">
                 <h1 class="fw-bold black-color text-center">Find Your Perfect Getaway!</h1>
                 <div class="d-flex justify-content-center">
-                    <p class="mb-0 mt-4 listinghero-para text-center">Searching for a spot to unwind? Let us help you
+                    <p class="mb-0 mt-3 listinghero-para  text-center">Searching for a spot to unwind? Let us help you
                         discover the
                         best properties that feel just like home—or maybe even better!</p>
+                </div>
+                <div class="mt-5">
+                    <form>
+                        <div class="d-flex justify-content-between listingform-bg rounded-4 p-3">
+                            <div class="searchform-group listingborder-right">
+                                <label for="location">Enter Location:</label>
+                                <input type="text" id="location" name="location" placeholder="Enter a city"
+                                    class="border-0 listingsearh-bg ">
+                            </div>
+                            <div class="searchform-group listingborder-right">
+                                <label for="checkindate">Check In:</label>
+                                <input type="date" id="checkindate" name="checkIn-date" placeholder="Add Dates"
+                                    class="border-0 listingsearh-bg">
+                            </div>
+                            <div class="searchform-group listingborder-right">
+                                <label for="checkoutdate">Check out:</label>
+                                <input type="date" id="checkoutdate" name="checkout-date" placeholder="Add Dates"
+                                    class="border-0 listingsearh-bg">
+                            </div>
+                            <div class="searchform-group">
+                                <label for="guest">Guests:</label>
+                                <input type="text" id="guest" name="Guest" placeholder="Add Guest"
+                                    class="border-0 listingsearh-bg">
+                            </div>
+                            <a href="#" class="text-decoration-none">
+                                <div class="listingsearchicon-size">
+                                    <img src="/imgs/faserach-listing.svg" alt="search" class="search-icon">
+                                </div>
+                            </a>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -32,40 +115,41 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-4 col-lg-6">
-                    <div class="listings-card  rounded-4">
+                    <div class="listings-card h-100 rounded-4 d-flex flex-column">
                         <div class="p-3">
                             <div class="listing-card-size">
                                 <img src="imgs/pawashelex.svg" alt="Pawa" class="w-100 p-3">
                             </div>
-                            <p class="mb-0 fw-bold mt-2">Paws and Relax</p>
+                            <p class="mb-0 fw-semi fs-5 mt-2">Paws and Relax</p>
                             <p class="mb-0 black-color">Explore a world where your furry friends are always welcome.
                                 Find the paw-fect spot for your whole family to unwind and make memories!</p>
                         </div>
-                        <div class="borderyellow"></div>
+                        <div class="borderyellow mt-auto"></div>
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-6 mt-4 mt-lg-0">
-                    <div class="listings-card  rounded-4">
+                    <div class="listings-card h-100 rounded-4 d-flex flex-column">
                         <div class="p-3">
                             <div class="listing-card-size">
-                                <img src="imgs/bookdollar.svg" alt="Pawa" class="w-100 p-4 ">
+                                <img src="/imgs/bookdollar.svg" alt="Pawa" class="w-100 p-4">
                             </div>
-                            <p class="mb-0 fw-bold mt-2">Paws and Relax</p>
-                            <p class="mb-0 black-color">Explore a world where your furry friends are always welcome.
-                                Find the paw-fect spot for your whole family to unwind and make memories!</p>
+                            <p class="mb-0 fw-semi fs-5 mt-2">Book directly and save up to 15%!</p>
+                            <p class="mb-0 black-color">Skip the extra fees from other online platforms and keep that
+                                cash for more vacation fun!</p>
                         </div>
-                        <div class="borderyellow"></div>
+                        <div class="borderyellow mt-auto"></div>
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-6 mt-4 mt-xl-0">
-                    <div class="listings-card  rounded-4">
+                    <div class="listings-card h-100 rounded-4 d-flex flex-column">
                         <div class="p-3">
                             <div class="listing-card-size">
                                 <img src="imgs/superstar.svg" alt="Pawa" class="w-100 p-3">
                             </div>
-                            <p class="mb-0 fw-bold mt-2">Paws and Relax</p>
-                            <p class="mb-0 black-color">Explore a world where your furry friends are always welcome.
-                                Find the paw-fect spot for your whole family to unwind and make memories!</p>
+                            <p class="mb-0 fw-semi fs-5 mt-2">Super Stays with Super Hosts!</p>
+                            <p class="mb-0 black-color">Our hosts aren't just great—they're Super and Premier great!
+                                With top-tier hosts at the helm, relax knowing every detail is perfectly planned for
+                                your fantastic stay.</p>
                         </div>
                         <div class="borderyellow"></div>
                     </div>
@@ -429,7 +513,7 @@
             <div class="row">
                 <div class="d-flex flex-column flex-md-row justify-content-between">
                     <div>
-                        <p class="mb-0 fs-2 fw-bold">High Fives All Around!</p>
+                        <p class="mb-0 fs-2 fw-bold high-fives-title">High Fives All Around!</p>
                         <p class="mb-0 mt-2 black-color fw-semi">Our customers are thrilled—SimpliHost saves them time
                             and makes management a breeze!</p>
                     </div>
@@ -442,7 +526,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-lg-4 col-md-6">
                     <div class="slider-bg p-3 mt-3">
                         <div class="slidercomma">
                             <img src="imgs/slidercomma1.svg" alt="comma" class="w-100">
@@ -454,11 +538,11 @@
                             <div class="slider-img1">
                                 <img src="imgs/aroundcircle-1.svg" alt="profile" class="w-100">
                             </div>
-                            <p class="mb-0 fs-5 fw-semi black-color ms-3">Will Somers</p>
+                            <p class="mb-0 fs-6 fw-semi black-color ms-3">Will Somers</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-lg-4 col-md-6">
                     <div class="slider-bg p-3 mt-3">
                         <div class="slidercomma">
                             <img src="imgs/slidercomma1.svg" alt="comma" class="w-100">
@@ -470,11 +554,11 @@
                             <div class="slider-img1">
                                 <img src="imgs/aroundcircle-1.svg" alt="profile" class="w-100">
                             </div>
-                            <p class="mb-0 fs-5 fw-semi black-color ms-3">Will Somers</p>
+                            <p class="mb-0 fs-6 fw-semi black-color ms-3">Will Somers</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-lg-4 col-md-6">
                     <div class="slider-bg p-3 mt-3">
                         <div class="slidercomma">
                             <img src="imgs/slidercomma1.svg" alt="comma" class="w-100">
@@ -486,7 +570,7 @@
                             <div class="slider-img1">
                                 <img src="imgs/aroundcircle-1.svg" alt="profile" class="w-100">
                             </div>
-                            <p class="mb-0 fs-5 fw-semi black-color ms-3">Will Somers</p>
+                            <p class="mb-0 fs-6 fw-semi black-color ms-3">Will Somers</p>
                         </div>
                     </div>
                 </div>
@@ -498,7 +582,7 @@
         <div class="footer py-5 border-bottom">
             <div class="container">
                 <div class="row">
-                    <div class="col-xxl-3 col-md-6">
+                    <div class="col-xxl-3">
                         <div>
                             <a href="#" class="text-decoration-none">
                                 <h3 class="white-color fw-bold">LOGO</h3>
@@ -523,13 +607,17 @@
                                 <p class="mb-0 fw-bold">All features</p>
                                 <ul class="list-unstyled footer-list">
                                     <li><a href="#" class="text-decoration-none white-color">Unified inbox</a></li>
-                                    <li><a href="#" class="text-decoration-none white-color">Smart Devices Integration</a>
+                                    <li><a href="#" class="text-decoration-none white-color">Smart Devices
+                                            Integration</a>
                                     </li>
-                                    <li><a href="#" class="text-decoration-none white-color">Tasks and Checklists</a></li>
-                                    <li><a href="#" class="text-decoration-none white-color">Automated Guest Messaging</a>
+                                    <li><a href="#" class="text-decoration-none white-color">Tasks and Checklists</a>
+                                    </li>
+                                    <li><a href="#" class="text-decoration-none white-color">Automated Guest
+                                            Messaging</a>
                                     </li>
                                     <li><a href="#" class="text-decoration-none white-color">Maintenance</a></li>
-                                    <li><a href="#" class="text-decoration-none white-color">Inventory Manaegement</a></li>
+                                    <li><a href="#" class="text-decoration-none white-color">Inventory Manaegement</a>
+                                    </li>
                                     <li><a href="#" class="text-decoration-none white-color">Automation</a></li>
                                     <li><a href="#" class="text-decoration-none white-color">Direct Booking</a></li>
                                 </ul>
@@ -561,7 +649,7 @@
                                             <i class="fa-brands fa-youtube"></i></a>
                                         <a href="#" class="text-decoration-none white-color f-size ms-3">
                                             <i class="fa-brands fa-linkedin"></i></a>
-    
+
                                     </li>
                                 </ul>
                             </div>
@@ -572,13 +660,14 @@
         </div>
         <div class="footer-text py-2">
             <div class="container">
-                <div class="row py-5">
+                <div class="row py-4">
                     <div class="col-md-6">
                         <div>
-                            <p class="mb-0 white-color">© 2024 simplihost.com | All rights raserved</p>
+                            <p class="mb-0 white-color text-md-start text-center">© 2024 simplihost.com | All rights
+                                raserved</p>
                         </div>
                     </div>
-                    <div class="col-md-6 d-flex justify-content-md-end">
+                    <div class="col-md-6 d-flex justify-content-md-end justify-content-center">
                         <div>
                             <p class="mb-0 white-color">Created with love by thecreation.design</p>
                         </div>
